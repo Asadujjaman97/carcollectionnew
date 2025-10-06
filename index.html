@@ -1,134 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarCollection</title>
+  <link rel="shortcut icon" href="./Image/Carlogo.svg" type="image/x-icon">
 
-    <!-- bootstrap connecting -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- costom style -->
-    <link rel="stylesheet" href="style.css">
-    
-
-
-
-
+  <!-- Custom style -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container">
-    <a class="navbar-brand" href="#"><img class="logo" src="./Image/Carlogo.svg" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse flex-grow-0 align-items-center" id="navbarTogglerDemo02">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./shop.html">Shop</a>
-        </li>
-         
-         <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-       
-        <button type="button" class="btn btn-success ms-4">Login</button>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-    </header>
-    <main>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="./Image/Carlogo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-     <!-- slider start here     -->
-      <section>
-
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-         
-  <div class="carousel-inner">
-    <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-    
-    <div class="carousel-item bg-primary-subtle active" data-bs-interval="2000">
-
-      <div class="d-flex flex-column-reverse flex-md-row align-items-center container">
-        <div class="halfwidth ">
-          <h1 class="fw-bold">
-            Drive-On BMW V4 <br> with smile
-          </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis praesentium accusantium expedita nobis nostrum eius enim magni dolor vero repudiandae laudantium aspernatur possimus provident, voluptatem pariatur quo quis. Itaque, modi.</p>
+        <div class="collapse navbar-collapse flex-grow-0 align-items-center" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+          <button type="button" class="btn btn-success ms-4">Login</button>
         </div>
-        <div class="halfwidth d-flex justify-content-center justify-content-md-end"><img  src="./Image/BMW.svg" alt=""></div>
       </div>
-       
-       
-    
-  </div>
-    <div class="carousel-item bg-primary-subtle active" data-bs-interval="2000">
+    </nav>
+  </header>
 
-      <div class="d-flex flex-column-reverse flex-md-row align-items-center container">
-        <div class="halfwidth ">
-          <h1 class="fw-bold">
-            Drive-On Yellow V4 <br> with smile
-          </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis praesentium accusantium expedita nobis nostrum eius enim magni dolor vero repudiandae laudantium aspernatur possimus provident, voluptatem pariatur quo quis. Itaque, modi.</p>
+  <main>
+    <!-- Slider start -->
+    <section>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- ✅ indicators placed correctly -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
         </div>
-        <div class="halfwidth d-flex justify-content-center justify-content-md-end"><img  src="./Image/Mordercar.svg" alt=""></div>
-      </div>
-       
-       
-    
-  </div>
-    <div class="carousel-item bg-primary-subtle active" data-bs-interval="2000">
 
-      <div class="d-flex flex-column-reverse flex-md-row align-items-center container">
-        <div class="halfwidth ">
-          <h1 class="fw-bold">
-            Drive-On Sports V4 <br> with smile
-          </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis praesentium accusantium expedita nobis nostrum eius enim magni dolor vero repudiandae laudantium aspernatur possimus provident, voluptatem pariatur quo quis. Itaque, modi.</p>
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active bg-primary-subtle" data-bs-interval="2000">
+            <div class="d-flex flex-column-reverse flex-md-row align-items-center container">
+              <div class="halfwidth pe-md-5">
+                <h1 class="fw-bold">Drive-On Lamborghini Temerario <br> with Passion</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis praesentium accusantium
+                  expedita nobis nostrum eius enim magni.</p>
+              </div>
+              <div class="halfwidth d-flex justify-content-center justify-content-md-end">
+                <img src="./Image/Lamborghini Temerario1.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item bg-primary-subtle" data-bs-interval="2000">
+            <div class="d-flex flex-column-reverse flex-md-row align-items-center container">
+              <div class="halfwidth pe-md-5">
+                <h1 class="fw-bold">Drive-On BMW V4 <br> with Smile</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis praesentium accusantium
+                  expedita nobis nostrum eius enim magni.</p>
+              </div>
+              <div class="halfwidth d-flex justify-content-center justify-content-md-end">
+                <img src="./Image/BMW.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item bg-primary-subtle" data-bs-interval="2000">
+            <div class="d-flex flex-column-reverse flex-md-row align-items-center container">
+              <div class="halfwidth pe-md-5">
+                <h1 class="fw-bold">Drive-On Yellow V4 <br> with Smile</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis praesentium accusantium
+                  expedita nobis nostrum eius enim magni.</p>
+              </div>
+              <div class="halfwidth d-flex justify-content-center justify-content-md-end">
+                <img src="./Image/Mordercar.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-item bg-primary-subtle" data-bs-interval="2000">
+            <div class="d-flex flex-column-reverse flex-md-row align-items-center container">
+              <div class="halfwidth pe-md-5">
+                <h1 class="fw-bold">Drive-On Sports V4 <br> with Smile</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis praesentium accusantium
+                  expedita nobis nostrum eius enim magni.</p>
+              </div>
+              <div class="halfwidth d-flex justify-content-center justify-content-md-end">
+                <img src="./Image/Sports.svg" alt="">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="halfwidth d-flex justify-content-center justify-content-md-end"><img  src="./Image/Sports.svg" alt=""></div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-       
-       
-    
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-      </section>
-    </main>
-    <footer></footer>
-   
-    
+    </section>
+  </main>
 
+  <footer></footer>
 
-<!-- bootstrap jss connecting -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
